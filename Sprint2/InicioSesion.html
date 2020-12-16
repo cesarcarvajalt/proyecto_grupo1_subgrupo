@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Inicio de Sesión </title>
+    <link rel="stylesheet" href="css/miEstilo.css" type="text/css">
+    <script src="validar_sesion.js"></script>
+</head>
+
+<body>
+    
+    <form action="" method="POST" onsubmit="return validar_Sesion()">    
+        
+        <center>
+        <h1> Inicio de Sesión </h1>
+        <img src="img/sesion.jpeg" alt="Usuario" height="90" width="90"> 
+        <table  border="0"    >
+                   
+            <tr>
+                <td>Usuario</td> 
+                <td> <input type="text" name="usuarioSesion" id="usuarioSesion" /> </td>            
+            </tr>
+
+            <tr>
+                <td>Contraseña</td> 
+                <td>
+                    <input type="password" name="claveSesion" id="claveSesion" />
+                    <img src="img/ojo.png" alt="ojo" width="20"
+                        onmouseover="mostrarPassword();" 
+                        onmouseout="ocultarPassword();">
+                        
+
+                </td>            
+            </tr>
+
+            <tr>
+                <td></td>
+                <td> 
+                    <input type="submit" class="boton" name="enviar" value="Enviar"     /> 
+                </td>                 
+            </tr>
+        
+        </table>
+        </center>
+
+    </form>
+</body>
+</html>

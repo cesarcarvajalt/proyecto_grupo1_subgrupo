@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Recuperar Contraseña </title>
+    <link rel="stylesheet" href="css/miEstilo.css" type="text/css">
+    <script src="validarRecupClave.js"></script>
+</head>
+
+<body>
+    
+    <form action="" method="POST" onsubmit="return validar_RecupClave();">    
+        
+        <center>
+        <h1> Recuperar contraseña </h1>
+        <img src="img/recuperarclave.png" alt="Usuario" height="90" width="90"> 
+
+        <table  border="0"    >
+            
+            
+            <tr>
+                <td>  Correo electronico:   </td>
+                <td> <input type="email" name="correo" id="correoRecupClave" placeholder="Correo electrónico"  />  </td>            
+            </tr>        
+                        
+               
+            <tr>
+                <td> </td>
+                <td>
+                    <input type="submit" class="boton" name="enviar" value="Restablecer contraseña"     /> 
+                </td>                 
+            </tr>
+        
+        </table>
+        </center>
+
+    </form>
+</body>
+</html>
